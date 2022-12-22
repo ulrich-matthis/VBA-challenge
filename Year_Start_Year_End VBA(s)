@@ -1,0 +1,197 @@
+#2018 Data VBA#
+
+Sub Stock_Analysis():
+
+
+    Dim ticker As String
+    Dim yearly_start As String
+    Dim yearly_total As Double
+    Dim yearly_percentage As Double
+    Dim yearly_open As Double
+    Dim yearly_close As Double
+    Dim yearly_change As Double
+    Dim percent_change As Double
+    Dim stock_volume As Double
+    
+    Dim Summary_Table As Integer
+    Summary_Table = 2
+    
+    
+        For i = 2 To 999999
+
+            If Cells(i, 2) = 20180102 Then
+            
+            yearly_open = Cells(i, 3).Value
+            
+            
+        Range("X" & Summary_Table).Value = yearly_open
+        
+        
+        Summary_Table = Summary_Table + 1
+        
+        yearly_open = 0
+            
+            
+        Else
+    
+            
+        End If
+        
+            
+      Next i
+      
+      Summary_Table = 2
+
+
+        For j = 2 To 999999
+
+            If Cells(j, 2) = 20181231 Then
+            
+            yearly_close = Cells(j, 6).Value
+            
+            
+        Range("Y" & Summary_Table).Value = yearly_close
+        
+        Summary_Table = Summary_Table + 1
+        
+        yearly_close = 0
+        
+        Else
+        
+        End If
+        
+    Next j
+
+End Sub
+
+#2019 Data VBA#
+
+Sub Stock_Analysis():
+
+
+    Dim ticker As String
+    Dim yearly_start As String
+    Dim yearly_total As Double
+    Dim yearly_percentage As Double
+    Dim yearly_open As Double
+    Dim yearly_close As Double
+    Dim yearly_change As Double
+    Dim percent_change As Double
+    Dim stock_volume As Double
+    
+    Dim Summary_Table As Integer
+    Summary_Table = 2
+    
+    
+        For i = 2 To 999999
+
+            If Cells(i, 2) = 20190102 Then
+            
+            yearly_open = Cells(i, 3).Value
+            
+            
+        Range("X" & Summary_Table).Value = yearly_open
+        
+        
+        Summary_Table = Summary_Table + 1
+        
+        yearly_open = 0
+            
+            
+        Else
+    
+            
+        End If
+        
+            
+      Next i
+      
+      Summary_Table = 2
+
+
+        For j = 2 To 999999
+
+            If Cells(j, 2) = 20191231 Then
+            
+            yearly_close = Cells(j, 6).Value
+            
+            
+        Range("Y" & Summary_Table).Value = yearly_close
+        
+        Summary_Table = Summary_Table + 1
+        
+        yearly_close = 0
+        
+        Else
+        
+        End If
+        
+    Next j
+
+End Sub
+
+#2020 Data VBA#
+
+Sub Stock_Analysis():
+
+
+    Dim ticker As String
+    Dim yearly_start As String
+    Dim yearly_total As Double
+    Dim yearly_percentage As Double
+    Dim yearly_open As Double
+    Dim yearly_close As Double
+    Dim yearly_change As Double
+    Dim percent_change As Double
+    Dim stock_volume As Double
+    
+    Dim Summary_Table As Integer
+    Summary_Table = 2
+    
+    
+        For i = 2 To 999999
+
+            If Cells(i, 2) = 20200102 Then
+            
+            yearly_open = Cells(i, 3).Value
+            
+            
+        Range("X" & Summary_Table).Value = yearly_open
+        
+        
+        Summary_Table = Summary_Table + 1
+        
+        yearly_open = 0
+            
+            
+        Else
+    
+            
+        End If
+        
+            
+      Next i
+      
+      Summary_Table = 2
+
+
+        For j = 2 To 999999
+
+            If Cells(j, 2) = 20201231 Then
+            
+            yearly_close = Cells(j, 6).Value
+            
+            
+        Range("Y" & Summary_Table).Value = yearly_close
+        
+        Summary_Table = Summary_Table + 1
+        
+        yearly_close = 0
+        
+        Else
+        
+        End If
+        
+    Next j
+
+End Sub
