@@ -1,0 +1,40 @@
+Sub Stock_Analysis():
+
+
+    Dim ticker As String
+    Dim yearly_total As Double
+    Dim yearly_percentage As Double
+    Dim yearly_open As Double
+    Dim yearly_close As Double
+    Dim yearly_change As Double
+    Dim percent_change As Double
+    Dim stock_volume As Double
+    
+    Dim Summary_Table As Integer
+    Summary_Table = 2
+    
+        For i = 2 To 999999
+        
+            If Cells(i + 1, 1) <> Cells(i, 1) Then
+            
+            ticker = Cells(i, 1).Value
+            
+            stock_volume = stock_volume + Cells(i, 7).Value
+            
+            Range("J" & Summary_Table).Value = ticker
+            
+            Range("M" & Summary_Table).Value = stock_volume
+            
+            Summary_Table = Summary_Table + 1
+            
+            ticker = 0
+            
+            stock_volume = 0
+            
+            Else
+            
+            stock_volume = stock_volume + Cells(i, 7).Value
+            
+        End If
+    
+    Next i
